@@ -75,3 +75,44 @@ a {
         max-width: 80%;
     }
 }
+
+.service {
+    background: url(../images/dist/service-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.question {
+    ul {
+        list-style: none;
+        li {
+           details {
+               margin-bottom: 15px;
+               list-style: none;
+                summary {
+                    padding: 11px 30px;
+                    border-radius: 5px;
+                    background: #F8F9FC;
+                    position: relative;
+                    list-style: none;
+                    &::after {
+                        content: url(../images/dist/arrow-down.png);
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                }
+                p {
+                    padding: 11px 30px;
+                }
+                &[open] {
+                    summary::after {
+                        content: url(../images/dist/arrow-up.png);
+                    }
+                }   
+           }
+        }
+        
+    }
+}
