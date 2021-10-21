@@ -47,8 +47,7 @@
         }
 	}
 
-    @include media-breakpoint-down(md) { 
-        position: static;
+    @include media-breakpoint-down(lg) { 
         margin: 10px auto 0 auto;
     }
 }

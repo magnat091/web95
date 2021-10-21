@@ -13,10 +13,13 @@
     &:hover {
         border: 2px solid $accent;
     }
+    @include media-breakpoint-down(lg) { 
+       padding: 20px;
+    }
 
     &--review {
         padding: 25px;
-        @include media-breakpoint-up(md) { 
+        @include media-breakpoint-up(lg) { 
             height: 550px;
             width: 100%;
         }
