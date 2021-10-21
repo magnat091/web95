@@ -46,3 +46,32 @@ a {
         }
     }
 }
+
+.author {
+    display: flex;
+    align-content: center;
+    margin-bottom: 30px;
+    &__avatar {
+        background-repeat: no-repeat;
+        width: 46px;
+        height: 46px;
+        margin-right: 10px;
+    }
+
+    &__name {
+        margin-bottom: 0;
+    }
+}
+
+.slider {
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
+
+.reviews {
+    &__content {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}

@@ -24,8 +24,7 @@ $gutter: $grid-gutter-width;
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints'; // Bootstrap Breakpoints mixin
 @import 'node_modules/bootstrap/scss/bootstrap-grid'; // Optional Bootstrap Grid
 // @import '~bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
-// @import "~slick-carousel/slick/slick.css"; 
-// @import "~slick-carousel/slick/slick-theme.css";
+@import "node_modules/slick-carousel/slick/slick.scss"; 
 
 // FONTS LOAD SECTION
 
