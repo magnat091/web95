@@ -6,6 +6,9 @@
 		align-items: center;
 		list-style: none;
 		justify-content: space-around;
+		@include media-breakpoint-down(md) { 
+			flex-direction: column;
+		 }
 	}
 
 	&__item {
@@ -21,6 +24,12 @@
 
 	&__link {
 		font-weight: 500;
+	}
+
+	&--mobile {
+		@include media-breakpoint-down(md) { 
+			display: none;
+		 }
 	}
 
     &--footer {

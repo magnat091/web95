@@ -16,7 +16,10 @@
 
     &--review {
         padding: 25px;
-        height: 550px;
+        @include media-breakpoint-up(md) { 
+            height: 550px;
+            width: 100%;
+        }
         .date {
             position: absolute;
             top: 20px;
@@ -24,5 +27,9 @@
             font-size: 9px;
             color: #0E3A52;
         }
+    }
+
+    @include media-breakpoint-down(md) { 
+        margin-bottom: 20px;
     }
 }

@@ -1,0 +1,58 @@
+// Variables
+
+@mixin btn() {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+@mixin btnIconDef() {
+  position: absolute;
+  width: 1.8rem;
+  height: .18rem;
+  border-radius: 2px;
+  background-color: $accent;
+  display: block;
+  margin: auto;
+  transition: 400ms;
+}
+
+.main-btn {
+  @include btn();
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.custom-menu-toggle {
+  @include btnIconDef();
+  &:before {
+    @include btnIconDef();
+    content: '';
+    backface-visibility: hidden;
+    transform: rotate(0deg) translateY(10px);
+  }
+  &:after {
+    @include btnIconDef();
+    content: '';
+    backface-visibility: hidden;
+    transform: rotate(0deg) translateY(-10px);
+  }
+}
+
+.main-btn.active  .custom-menu-toggle {
+  background-color: rgba(255, 255, 255, 0);
+  &:before {
+    @include btnIconDef();
+    content: '';
+    transform: rotate(45deg) translateY(0px);
+  }
+  &:after {
+    @include btnIconDef();
+    content: '';
+    transform: rotate(-45deg) translateY(0px);
+  }
+}

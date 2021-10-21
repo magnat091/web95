@@ -27,6 +27,9 @@
     color: $white;
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(md) { 
+       text-align: center;
+    }
     a {
         color: $white;
     }
@@ -35,13 +38,18 @@
         position: absolute;
         right: 0;
         bottom: -37px;
+        @include media-breakpoint-down(md) { 
+            position: static;
+         }
     }
 }
 
 .reviews {
     &__content {
-        margin: 0 auto;
-        max-width: 80%;
+        @include media-breakpoint-up(md) { 
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
 }
 

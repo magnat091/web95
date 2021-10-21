@@ -1,9 +1,17 @@
 .banner {
     display: flex;
     align-items: center;
-    height: 712px;
     background: url(../images/dist/main-bg.png) no-repeat center;
     background-size: cover;
+    @include media-breakpoint-up(md) { 
+        height: 712px;
+    }
+    @include media-breakpoint-down(md) { 
+        padding: 40px 0;
+        img {
+            display: none;
+        }
+    }
     &__content {
         height: 100%;
         display: flex;
