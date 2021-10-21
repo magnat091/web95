@@ -12,6 +12,7 @@
 	display: flex;
 	align-items: center;
     border: 1px solid $accent;
+    justify-content: center;
 	&__icon {
 		margin-right: 15px;
 	}
@@ -19,9 +20,15 @@
 		color: $white;
 	}
 
+    &--fz {
+        &-14 {
+            font-size: 14px;
+        }
+    }
+
     &--color {
        &-black {
-           background: $textcolor;
+           color: $textcolor;
        }
     }
 
@@ -30,5 +37,13 @@
             border: 1px solid $green;
 			background: $green;
 		}
+
+        &-white {
+            background: $white;
+            border: 1px solid $white;
+            &:hover {
+                color: $textcolor;
+            }
+        }
 	}
 }

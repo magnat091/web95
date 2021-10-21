@@ -19,11 +19,22 @@
     }
 }
 
+.fz-14 {
+    font-size: 14px;
+}
+
 .text {
     &--accent {
         color: $accent;
     }
+    &--red {
+        color: #991616;
+    }
     &--center {
         text-align: center;
     }
+}
+
+.list-style-none {
+    list-style: none;
 }

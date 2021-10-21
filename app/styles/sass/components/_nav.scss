@@ -1,0 +1,43 @@
+.nav {
+	font-family: $secondfont;
+    $p: &;
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		justify-content: space-around;
+	}
+
+	&__item {
+		margin: 0 5px;
+
+		&--active {
+			.nav__link {
+				color: $accent;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+	}
+
+    &--footer {
+        font-family: $userfont !important;
+        #{$p}__list {
+            flex-direction: column;
+            align-items: start;
+        }
+        #{$p}__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+           &::before {
+                content: url('../images/dist/arrow-right.svg');
+                height: 22px;
+                margin-right: 12px;
+           }
+        }
+    }
+}

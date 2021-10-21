@@ -1,0 +1,32 @@
+.list {
+    list-style: none;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &::before {
+            content: url('../images/dist/icon-list.svg');
+            margin-right: 10px;
+        }
+    }
+
+    &--font-24 {
+        font-size: 24px;
+    }
+
+    &--icons-white {
+        .list__item {
+            &::before {
+                content: url('../images/dist/icon-list-white.svg');
+            }
+        }
+    }
+
+    &--icons-arrow {
+        .list__item {
+            &::before {
+                content: url('../images/dist/arrow-right.svg');
+            }
+        }
+    }
+}
