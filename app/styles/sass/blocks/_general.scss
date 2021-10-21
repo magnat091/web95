@@ -1,3 +1,48 @@
 // GENERAL PROJECT STYLES
+figure {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $textcolor;
+    &:hover {
+        color: $textcolor;
+    }
+}
 
 
+.img-responce {
+    width: 100%;
+}
+
+.list {
+    list-style: none;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        position: relative;
+        &::before {
+            content: url('../images/dist/icon-list.svg');
+            margin-right: 10px;
+        }
+    }
+
+    &--font-24 {
+        font-size: 24px;
+    }
+
+    &--icons-white {
+        .list__item {
+            &::before {
+                content: url('../images/dist/icon-list-white.svg');
+            }
+        }
+    }
+}

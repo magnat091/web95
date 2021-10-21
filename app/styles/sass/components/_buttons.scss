@@ -1,0 +1,34 @@
+.btn {
+    background: $accent;
+    border-radius: 15px;
+    color: $white;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	line-height: 28px;
+	border-radius: 15px;
+	padding: 8px 21px;
+	max-width: 270px;
+	display: flex;
+	align-items: center;
+    border: 1px solid $accent;
+	&__icon {
+		margin-right: 15px;
+	}
+	&:hover {
+		color: $white;
+	}
+
+    &--color {
+       &-black {
+           background: $textcolor;
+       }
+    }
+
+	&--bg {
+		&-green {
+            border: 1px solid $green;
+			background: $green;
+		}
+	}
+}

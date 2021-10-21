@@ -1,8 +1,8 @@
 import $ from 'jquery'
 // require('slick-carousel');
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+// 	// Custom JS
 
-})
+// })

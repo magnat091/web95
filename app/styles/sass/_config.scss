@@ -1,10 +1,14 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
-$lineheight: 1.65; // Document Line Height
-$userfont: roboto-oh5, sans-serif; // User Font Family
+$accent: #5350FF; // Accent Color
+$green: #3FCB5D; 
+$gray: #ECECEC; 
+$white: #fff;
+$fontsize: 18px; // Body Font Size
+$textcolor: #000; // Text Color
+$lineheight: 27px; // Document Line Height
+$userfont: 'Roboto', sans-serif; // User Font Family
+$secondfont: 'Montserrat', sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -12,12 +16,16 @@ $grid-gutter-width: 30px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
-@import '~bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
-@import '~bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
-@import '~bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+@import "node_modules/bootstrap/scss/reboot";
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid'; // Optional Bootstrap Grid
 // @import '~bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
-// @import '~slick-carousel/slick/slick.scss';
+// @import "~slick-carousel/slick/slick.css"; 
+// @import "~slick-carousel/slick/slick-theme.css";
 
 // FONTS LOAD SECTION
 
@@ -29,12 +37,11 @@ $gutter: $grid-gutter-width;
 		src: url($furl) format('woff2');
 	}
 }
-
-@include font('VisueltPro', normal, 400, '/fonts/VisueltPro-Regular.woff2');
-@include font('VisueltPro', normal, 700, '/fonts/VisueltPro-Bold.woff2');
-@include font('VisueltPro', normal, 300, '/fonts/VisueltPro-Light.woff2');
-@include font('VisueltPro', normal, 500, '/fonts/VisueltPro-Medium.woff2');
-@include font('VisueltPro', normal, 900, '/fonts/VisueltPro-Black.woff2');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+// @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2');
+// @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2');
+// @include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2');
+// @include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
 
 // GENERAL CSS SETTINGS
 

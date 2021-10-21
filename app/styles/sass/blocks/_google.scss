@@ -1,0 +1,17 @@
+.google {
+    position: relative;
+    background: url(../images/dist/google-bg.png) no-repeat center;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    align-items: center;
+    a {
+        color: $white;
+    }
+
+    .btn {
+        position: absolute;
+        right: 0;
+        bottom: -37px;
+    }
+}
